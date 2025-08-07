@@ -1,11 +1,11 @@
-# bloom-filter
+# Bloom-filter
 
-In this project, I implement a bloom filter and compare two different hash functions to evaluate their effectiveness in minimizing the false positive rate (FPR). The empirical results are benchmarked against the theoretical FPR expected from Bloom filter theory.
+In this project, I implement a [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) and compare two different hash functions to evaluate their effectiveness in minimizing the false positive rate (FPR). The empirical results are benchmarked against the theoretical FPR expected from Bloom filter theory.
 
 ### Hash Functions Overview
 
 - **Hash Function 1 (h1):**  
-  A linear hash of the form `(a * x + b) mod p mod m`, where `a` and `b` are random coefficients generated per hash seed, `p` is a large Mersenne prime, and `m` is the size of the Bloom filter. This approach is a classical universal hashing scheme intended to evenly distribute inputs across the table.
+  A linear hash of the form `(a * x + b) mod p mod m`, where `a` and `b` are random coefficients generated per hash seed, `p` is a large [Mersenne prime](https://en.wikipedia.org/wiki/Mersenne_prime), and `m` is the size of the Bloom filter. This approach is a classical universal hashing scheme intended to evenly distribute inputs across the table.
 
 - **Hash Function 2 (h2):**  
   A pseudo-random function based on seeding a random number generator with `value + seed`, then generating a random index in `[0, m-1]`. This function relies on the built-in Python `random` module for randomness.
