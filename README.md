@@ -19,9 +19,7 @@ In this project, I implement a bloom filter and compare two different hash funct
 - 5 trials per `k`
 - Median empirical FPR is reported per configuration
 - Theoretical FPR calculated using the standard formula:  
-  \[
-  \text{FPR} = \left(1 - e^{-\frac{kn}{m}}\right)^k
-  \]
+  ![FPR formula](images/fpr_formula.png)
 
 ### Results Summary
 
