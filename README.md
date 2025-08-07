@@ -38,7 +38,9 @@ In this project, I implement a bloom filter and compare two different hash funct
 
 ### Plots
 
+  #### Hash Function 1
 ![False Positive Rate vs Number of Hash Functions (Hash Function 1)](images/h1_plot.png)
+  #### Hash Function 2
 ![False Positive Rate vs Number of Hash Functions (Hash Function 2)](images/h2_plot.png)
 
 ### Analysis
